@@ -7,13 +7,23 @@ import { PageComponent } from './page/page.component';
 
 // Connect and declaration Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule } from '@angular/material';
+import { MatButtonModule, MatCheckboxModule, MatToolbarModule,
+   MatCardModule, MatMenuModule, MatIconModule } from '@angular/material';
+
+import { HeaderComponent } from './header/header.component';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { AboutComponent } from './about/about.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    PageComponent
+    PageComponent,
+    HeaderComponent,
+    NotFoundComponent,
+    AboutComponent,
+    ProjectsComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +33,8 @@ import { MatButtonModule, MatCheckboxModule, MatToolbarModule, MatCardModule } f
     MatCheckboxModule,
     MatToolbarModule,
     MatCardModule,
+    MatMenuModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

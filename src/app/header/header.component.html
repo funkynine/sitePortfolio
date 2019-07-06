@@ -1,0 +1,31 @@
+
+
+
+
+
+<div class="menu">
+    <a _ngcontent-vjq-c1="" aria-label="Home page" class="docs-button mat-button" mat-button="" [routerLink]="[ '' ]" tabindex="0" aria-disabled="false">
+        <span class="mat-button-wrapper">
+        <img _ngcontent-vjq-c1="" alt="Home" class="logo" src="../../assets/logo.png">
+        <span>Home</span></span><div class="mat-button-ripple mat-ripple" matripple=""></div>
+        <div class="mat-button-focus-overlay"></div>
+    </a>
+      
+    
+    <button mat-button [routerLink]="[ 'about' ]">About</button>
+  
+    
+    
+    <button mat-button [routerLink]="[ 'projects' ]">Projects</button>
+
+
+    <button mat-button [matMenuTriggerFor]="phone">Contacts</button>
+
+    <mat-menu #phone="matMenu">
+            <button mat-menu-item>+380 66 522 9737</button>
+            <small mat-menu-item>Ukraine</small>
+            
+            <button mat-menu-item>+48 576 765 297</button>
+            <small mat-menu-item>Poland</small>
+    </mat-menu>
+</div>
