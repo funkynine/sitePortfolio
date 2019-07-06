@@ -8,11 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PageComponent implements OnInit {
 
+  images = [1, 2, 3].map(() => `https://picsum.photos/900/500?random&t=${Math.random()}`);
+
+
   page = {
-    title: "Home",
+    title: "Something about me",
     subTitle: "Welcom to home page!",
     content: "Some content",
-    image: '../assets/back.jpg'
+    image: '../assets/photo.jpg'
   }
 
   constructor() { }

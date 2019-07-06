@@ -9,6 +9,7 @@ import { PageComponent } from './page/page.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatToolbarModule,
    MatCardModule, MatMenuModule, MatIconModule } from '@angular/material';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './header/header.component';
 import { NotFoundComponent } from './not-found/not-found.component';
@@ -34,7 +35,8 @@ import { ProjectsComponent } from './projects/projects.component';
     MatToolbarModule,
     MatCardModule,
     MatMenuModule,
-    MatIconModule
+    MatIconModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
