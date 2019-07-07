@@ -5,20 +5,20 @@
 
 <div class="menu">
     <a _ngcontent-vjq-c1="" aria-label="Home page" class="docs-button mat-button" mat-button="" [routerLink]="[ '' ]" tabindex="0" aria-disabled="false">
-        <span class="mat-button-wrapper"></span>
+        <!-- <span class="mat-button-wrapper"></span> -->
         <img alt="Home" class="logo" src="../../assets/logo.png">
         <!-- <div class="mat-button-focus-overlay"></div> -->
     </a>
       
     
-    <button mat-button [routerLink]="[ 'about' ]">About</button>
+    <button mat-button [routerLink]="[ 'about' ]" class="header_item">About</button>
   
     
     
-    <button mat-button [routerLink]="[ 'projects' ]">Projects</button>
+    <button mat-button [routerLink]="[ 'projects' ]" class="header_item">Projects</button>
 
 
-    <button mat-button [matMenuTriggerFor]="phone">Contacts</button>
+    <button mat-button [matMenuTriggerFor]="phone" class="header_item">Contacts</button>
 
     <mat-menu #phone="matMenu">
             <button mat-menu-item>+380 66 522 9737</button>
