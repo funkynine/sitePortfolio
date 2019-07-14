@@ -16,6 +16,8 @@ import { NotFoundComponent } from './not-found/not-found.component';
 import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
+import { DataFromLnService } from './data-from-ln.service';
+
 
 
 @NgModule({
@@ -40,7 +42,7 @@ import { FooterComponent } from './footer/footer.component';
     MatIconModule,
     NgbModule
   ],
-  providers: [],
+  providers: [DataFromLnService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
