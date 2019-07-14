@@ -15,8 +15,6 @@ export class PageComponent implements OnInit {
 
   page = {
     title: "Something about me",
-    subTitle: "Welcom to home page!",
-    content: "Some content",
     image: '../assets/photo.jpg'
   }
 
