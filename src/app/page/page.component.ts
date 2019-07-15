@@ -10,6 +10,7 @@ export class PageComponent implements OnInit {
 
   images = ['../../assets/ione4.png',
             '../../assets/proj2.png',
+            '../../assets/miniShop1.png',
             '../../assets/miniShop2.png'];
 
 

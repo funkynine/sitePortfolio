@@ -3,33 +3,20 @@
     <div class="items">
         <div *ngFor='let project of projects; index as projectId'>
             <mat-card class="item">
-            <mat-card-header>
-                <mat-card-title>
-                <h1>{{ project.title }}</h1>
-                </mat-card-title>
-                <mat-card-subtitle>{{ project.subTitle }}</mat-card-subtitle>
-            </mat-card-header>
+                <mat-card-header>
+                    <mat-card-title>
+                    <h1>{{ project.title }}</h1>
+                    </mat-card-title>
+                    <mat-card-subtitle>{{ project.role }}</mat-card-subtitle>
+                </mat-card-header>
 
-            <img mat-card-image src="{{ project.image }}" class="card-img">
+                <img mat-card-image src="{{ project.image }}" class="card-img">
 
-            <mat-card-content>
-                {{ project.content }}
-            </mat-card-content>
+                <mat-card-content>
+                    {{ project.content }}
+                </mat-card-content>
             </mat-card>
         </div>
     </div>
-
-  <!-- <mat-card class="item">
-        <mat-card-header>
-            <mat-card-title><h1>First project</h1></mat-card-title>
-            <mat-card-subtitle>Role: Front-end </mat-card-subtitle>
-        </mat-card-header>
-
-        <img mat-card-image src="../../assets/logo.png">
-
-        <mat-card-content>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestiae, repellendus.
-        </mat-card-content>
-    </mat-card> -->
 
 </main>
