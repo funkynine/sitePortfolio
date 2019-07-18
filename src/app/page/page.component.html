@@ -1,7 +1,7 @@
 
 <main class="container">
 
-  <div class="smallInfoAbout">
+  <div class="smallInfoAbout animation-1">
     <div class="textAbout">
       <h2>{{ page.title }}</h2>
       <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -17,9 +17,9 @@
     
 
 
-  <h2 class="h2">Skills</h2>
+  <h2 class="h2" >Skills</h2>
 
-  <div class="skill">
+  <div class="skill animation-2" [class.animation-2]="checkStatus">
     <div class="item">
       <img src="../../assets/js.png" alt="js">
       <h4>JavaScript(ES6)</h4>

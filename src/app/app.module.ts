@@ -40,7 +40,7 @@ import { DataFromLnService } from './data-from-ln.service';
     MatCardModule,
     MatMenuModule,
     MatIconModule,
-    NgbModule
+    NgbModule,
   ],
   providers: [DataFromLnService],
   bootstrap: [AppComponent]

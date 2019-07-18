@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { fromEvent } from 'rxjs';
 
 
 @Component({
@@ -19,9 +20,19 @@ export class PageComponent implements OnInit {
     image: '../assets/photo.jpg'
   }
 
+  checkStatus = false;
+
   constructor() { }
 
   ngOnInit() {
+    this.subscription()
+  }
+
+  subscription() {
+    fromEvent(document, 'click')
+      .subscribe(() => {
+        this.checkStatus = !this.checkStatus;
+      });
   }
 
 }
