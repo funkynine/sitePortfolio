@@ -28,11 +28,32 @@ export class PageComponent implements OnInit {
     this.subscription()
   }
 
+  // subscription() {
+  //   fromEvent(document, 'click')
+  //     .subscribe(() => {
+  //       this.checkStatus = !this.checkStatus;
+  //     });
+  // }
+
   subscription() {
-    fromEvent(document, 'click')
+    const halfHeight = (document.body.offsetHeight / 2) - (window.innerHeight * 1.5);
+
+    fromEvent(window, 'scroll')
       .subscribe(() => {
-        this.checkStatus = !this.checkStatus;
-      });
+        if (window.pageYOffset > halfHeight) {
+          this.checkStatus = true;
+        }
+    });
   }
+
+  // private subscriber(): void {
+  //   const halfHeight = (this.document.body.offsetHeight / 2) - (window.innerHeight * 1.5);
+  //   this.scrollSubscription$ = fromEvent(window, 'scroll')
+  //     .subscribe(() => {
+  //       if (window.pageYOffset > halfHeight) {
+  //         this.createAccountModal();
+  //       }
+  //     });
+  // }
 
 }
