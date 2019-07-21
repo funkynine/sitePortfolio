@@ -8,7 +8,7 @@ export const projects = [
     {
         title: "iOne",
         image: "../../assets/ione1.png",
-        content: "I developed a landing page for our company.",
+        content: "I developed a landing page for our company ione.vn.ua",
         role: "Role: Front-end"
     },
     {
@@ -18,20 +18,14 @@ export const projects = [
         role: "Role: Front-end"
     },
     {
-        title: "Landing page",
-        image: "2",
-        content: "3",
-        role: "Role: Front-end"
-    },
-    {
-        title: "iOne",
+        title: "Wheater blog",
         image: "../../assets/ione1.png",
         content: "I developed a landing page for our company.",
         role: "Role: Front-end"
     },
     {
-        title: "iOne",
-        image: "../../assets/ione1.png",
+        title: "Layet page",
+        image: "../../assets/proj2.png",
         content: "I developed a landing page for our company.",
         role: "Role: Front-end"
     },

@@ -4,10 +4,12 @@
   <div class="smallInfoAbout animation-1">
     <div class="textAbout">
       <h2>{{ page.title }}</h2>
-      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-        Laudantium nemo dolores suscipit veniam aut eligendi asperiores tenetur nesciunt.
-        Unde ab eaque,
-        vel reprehenderit nobis hic asperiores incidunt vero voluptas mollitia.</p>
+      <p class="text-c">Hi, you went to the site of my portfolio. <br>
+          My name is Ihor Bazyliuk, I'm doing front-end development. <br>
+          On this site you can see examples of my work. You can also see what skills I have. <br>
+          You can contact me about work here.
+      </p>
+      <button mat-flat-button color="primary" class="background-button">Contact me</button>
     </div>
     <div class="myPhoto">
       <img src="../../assets/photo.jpg" alt="">
@@ -39,7 +41,7 @@
   </div>
 
   
-  <div class="myCarousel">
+  <div class="myCarousel" [class.animation-3]="checkStatus">
 
     <h2 class="text_sl">Projects</h2>
 
