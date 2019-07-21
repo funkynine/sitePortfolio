@@ -1,20 +1,21 @@
+<form action="/" method="POST">
+    <h2 mat-dialog-title>{{ data.name }}</h2>
 
-<h2 mat-dialog-title>{{ data.name }}</h2>
+    <mat-dialog-content>
+        <div class="input">
+            <label for="name">Name: </label>
+            <input type="text" id="name" placeholder="Ivan Ivanov" [formControl]='nameControl'>
 
-<mat-dialog-content>
-    <div class="input">
-        <label for="name">Name: </label>
-        <input type="text" id="name" placeholder="Ivan Ivanov">
+            <label for="email">Email: </label>
+            <input type="email" id="email" placeholder="test@gmail.com" [formControl]='emailControl'>
 
-        <label for="email">Email: </label>
-        <input type="email" id="second" placeholder="test@gmail.com">
+            <label for="phone">Phone number: </label>
+            <input type="text" placeholder="+38096-111-11-11" [formControl]='phoneControl'>
+        </div>
+    </mat-dialog-content>
 
-        <label for="phone">Phone number: </label>
-        <input type="text" placeholder="+38096-111-11-11">
-    </div>
-</mat-dialog-content>
-
-<mat-dialog-actions class="btn-two">
-    <button mat-button (click)="closeModal()">Close</button>
-    <button mat-flat-button color="primary">Send</button>
-</mat-dialog-actions>
+    <mat-dialog-actions class="btn-two">
+        <button mat-button (click)="closeModal()" type="button">Close</button>
+        <button mat-button type="submit">Send</button>
+    </mat-dialog-actions>
+</form>

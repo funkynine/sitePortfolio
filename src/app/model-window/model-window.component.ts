@@ -1,5 +1,8 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
+import { FormControl, Validators } from '@angular/forms';
+
+
 
 @Component({
   selector: 'app-model-window',
@@ -8,9 +11,16 @@ import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material';
 })
 export class ModelWindowComponent implements OnInit {
 
-  constructor(private matDialogRef: MatDialogRef<ModelWindowComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
+  nameControl: FormControl;
+  emailControl: FormControl;
+  phoneControl: FormControl;
+
+
+  constructor(private matDialogRef: MatDialogRef<ModelWindowComponent>, @Inject(MAT_DIALOG_DATA) public data: any) {}
 
   ngOnInit() {
+    this.nameControl = new FormControl('', [Validators.required, Validators.minLength(2)]);
+    this.emailControl = new FormControl('', [Validators.email, Validators.minLength(5)]);
   }
 
   public closeModal(){

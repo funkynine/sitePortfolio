@@ -8,7 +8,7 @@ import { PageComponent } from './page/page.component';
 // Connect and declaration Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatToolbarModule,
-   MatCardModule, MatMenuModule, MatIconModule, MatDialogModule } from '@angular/material';
+   MatCardModule, MatMenuModule, MatIconModule, MatDialogModule, MatFormField, MatFormFieldModule } from '@angular/material';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './header/header.component';
@@ -18,6 +18,7 @@ import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataFromLnService } from './data-from-ln.service';
 import { ModelWindowComponent } from './model-window/model-window.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
@@ -34,7 +35,9 @@ import { ModelWindowComponent } from './model-window/model-window.component';
   ],
   imports: [
     BrowserModule,
+    FormsModule,
     AppRoutingModule,
+    ReactiveFormsModule,
     BrowserAnimationsModule,
     MatButtonModule,
     MatCheckboxModule,
@@ -43,6 +46,7 @@ import { ModelWindowComponent } from './model-window/model-window.component';
     MatMenuModule,
     MatIconModule,
     MatDialogModule,
+    MatFormFieldModule,
     NgbModule,
   ],
   providers: [DataFromLnService],

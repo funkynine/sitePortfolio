@@ -17,15 +17,12 @@ export class PageComponent implements OnInit {
             '../../assets/miniShop1.png',
             '../../assets/miniShop2.png'];
 
-
   page = {
     title: "Something about me",
     image: '../assets/photo.jpg'
   }
-
   
   name = "Message";
-
   checkStatus = false;
 
   constructor(private dialog: MatDialog) {}

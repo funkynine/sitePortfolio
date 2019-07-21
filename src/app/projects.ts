@@ -24,7 +24,7 @@ export const projects = [
         role: "Role: Front-end"
     },
     {
-        title: "Layet page",
+        title: "Layout page",
         image: "../../assets/proj2.png",
         content: "I developed a landing page for our company.",
         role: "Role: Front-end"
