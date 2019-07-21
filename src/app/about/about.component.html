@@ -11,22 +11,59 @@
   <h2 class="text-center">My skills</h2>
 
   <div class="mySkills">
-    <div class="skill">HTML5</div>
-    <div class="skill">CSS\Sass\Scss</div>
-    <div class="skill">Javascript (ES6)</div>
-    <div class="skill">Angular</div>
-    <div class="skill">Node JS</div>
-    <div class="skill">Express</div>
-    <div class="skill">Git</div>
-    <div class="skill">Python</div>
-    <div class="skill">Heroku</div>
-    <div class="skill">MongoDB</div>
-    <div class="skill">SQLite</div>
-    <div class="skill">MySQL</div>
-    <div class="skill">Mongoose</div>
-    <div class="skill">Photoshop</div>
-    <div class="skill">Final cut X PRO</div>
+    <div class="skillz">
+      <div class="skill">HTML5
+        <div class="line" [class.line-50]='checkStatus'></div>
+      </div>
+      <div class="skill">CSS\Sass\Scss
+        <div class="line" [class.line-50]='checkStatus'></div>
+      </div>
+      <div class="skill">Javascript (ES6)
+        <div class="line" [class.line-45]='checkStatus'></div>
+      </div>
+      <div class="skill">Angular
+        <div class="line" [class.line-40]='checkStatus'></div>
+      </div>
+      <div class="skill">Node JS
+        <div class="line" [class.line-40]='checkStatus'></div>
+      </div>
+      <div class="skill">Express
+        <div class="line" [class.line-45]='checkStatus'></div>
+      </div>
+      <div class="skill">Git
+        <div class="line" [class.line-50]='checkStatus'></div>
+      </div>
+      <div class="skill">Python
+        <div class="line" [class.line-40]='checkStatus'></div>
+      </div>
+      <div class="skill">Heroku
+        <div class="line" [class.line-35]='checkStatus'></div>
+      </div>
+      <div class="skill">MongoDB
+        <div class="line" [class.line-40]='checkStatus'></div>
+      </div>
+      <div class="skill">SQLite
+        <div class="line" [class.line-30]='checkStatus'></div>
+      </div>
+      <div class="skill">MySQL
+        <div class="line" [class.line-30]='checkStatus'></div>
+      </div>
+      <div class="skill">Mongoose
+        <div class="line" [class.line-30]='checkStatus'></div>
+      </div>
+      <div class="skill">Photoshop
+        <div class="line" [class.line-50]='checkStatus'></div>
+      </div>
+      <div class="skill">Final cut X PRO
+        <div class="line" [class.line-45]='checkStatus'></div>
+      </div>
+    </div>
+
+    <div class="pic">
+      <img src="../../assets/mean.png" alt="Mean Stack" class='image-mean-1' [class.image-mean-2]='checkStatus'>
+    </div>
   </div>
+
 
   <h2 class="text-center">My Position</h2>
 
@@ -48,7 +85,7 @@
       <h3>iOne - Apple authorized reseller.</h3>
       <p>
         Development, support company product. <br>
-        Communication with customers.         <br>
+        Communication with customers. <br>
         Instagram promotion Сontent creation. <br>
         Conducting analysis and reporting of the company.
       </p>

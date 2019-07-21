@@ -28,9 +28,48 @@ main
     justify-content: center
 
 .mySkills
-    display: flex
-    flex-wrap: wrap
-    justify-content: center
+   display: flex
+   max-width: 100%
+   .pic
+       min-width: 50%
+   .skillz
+       display: grid
+       min-width: 50%
 
 .skill
     padding: 10px
+    div
+        // height: 2px
+        max-width: 100%
+        border: 2px solid #37ced9
+
+.line
+    width: 0%
+
+.line-50
+    transition: width 2.3s ease
+    width: 100%
+.line-45
+    transition: width 2s ease
+    width: 90%  
+.line-40
+    transition: width 1.7s ease
+    width: 80%
+.line-35
+    transition: width 1.6s ease
+    width: 70%
+.line-30
+    transition: width 1.5s ease
+    width: 60%
+.line-25
+    transition: width 1.3s ease
+    width: 50%
+
+.image-mean-1
+    margin: 20% 0% 0% 25%
+    opacity: 0
+
+.image-mean-2
+    transition: opacity 4s
+    opacity: 1
+
