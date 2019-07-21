@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { fromEvent } from 'rxjs';
+import { MatDialog } from '@angular/material';
+import { ModelWindowComponent } from '../model-window/model-window.component';
 
 
 @Component({
@@ -21,9 +23,12 @@ export class PageComponent implements OnInit {
     image: '../assets/photo.jpg'
   }
 
+  
+  name = "Message";
+
   checkStatus = false;
 
-  constructor() { }
+  constructor(private dialog: MatDialog) {}
 
   ngOnInit() {
     this.subscription()
@@ -40,4 +45,10 @@ export class PageComponent implements OnInit {
     });
   }
 
+  openDialog(): void {
+  this.dialog.open(ModelWindowComponent, {
+      width: '400px',
+      data: {name: this.name}
+    });
+  }
 }

@@ -8,7 +8,7 @@ import { PageComponent } from './page/page.component';
 // Connect and declaration Material
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule, MatCheckboxModule, MatToolbarModule,
-   MatCardModule, MatMenuModule, MatIconModule } from '@angular/material';
+   MatCardModule, MatMenuModule, MatIconModule, MatDialogModule } from '@angular/material';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { HeaderComponent } from './header/header.component';
@@ -17,6 +17,7 @@ import { AboutComponent } from './about/about.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { FooterComponent } from './footer/footer.component';
 import { DataFromLnService } from './data-from-ln.service';
+import { ModelWindowComponent } from './model-window/model-window.component';
 
 
 
@@ -28,7 +29,8 @@ import { DataFromLnService } from './data-from-ln.service';
     NotFoundComponent,
     AboutComponent,
     ProjectsComponent,
-    FooterComponent
+    FooterComponent,
+    ModelWindowComponent
   ],
   imports: [
     BrowserModule,
@@ -40,9 +42,11 @@ import { DataFromLnService } from './data-from-ln.service';
     MatCardModule,
     MatMenuModule,
     MatIconModule,
+    MatDialogModule,
     NgbModule,
   ],
   providers: [DataFromLnService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ModelWindowComponent]
 })
 export class AppModule { }
