@@ -4,7 +4,7 @@ export const projects = [
         image: "../../assets/siteP.png",
         content: "It's site for post my work. App-SPA",
         role: "Role: Front-end",
-        link: "http://localhost:4200"
+        link: "http://funkynine.xyz"
     },
     {
         title: "iOne",
